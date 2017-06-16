@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>
+			Getting user input
+		</title>
+	</head>
+	<body>
+		<h1>
+			Give your details before entry:
+		</h1>
+		<form method="post" action='.'>{% csrf_token %}
+
+			{{form.as_p}}
+			<input type="submit" value="Submit"/>
+		</form>
+	</body>
+</html>
